@@ -1,0 +1,118 @@
+@font-face {
+    font-family: fuente1;
+    src: url('archives.css/LilitaOne-Regular.ttf');
+}
+
+body{
+    background-image: url('../mutimedia/background.jpg');
+    background-repeat: no-repeat;
+    font-family: fuente1, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fotos-container {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.lastDiv{
+    width: auto;
+    font-size: 40px; 
+    margin-top: -160px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#corazoncito{
+    position: relative; 
+    z-index: -1; 
+    width: 10px;
+}
+
+img {
+    transition: transform 2s ease-in-out; /* Transición suave para las rotaciones */
+}
+
+@keyframes lanzarFoto1 {
+    0% {
+        transform: translateY(100%) rotate(-10deg);
+    }
+    50% {
+        transform: translateY(-50%) rotate(-5deg);
+    }
+    100% {
+        transform: translateY(-20%) rotate(-5deg);
+    }
+}
+
+@keyframes lanzarFoto2 {
+    0% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-20%);
+    }
+}
+
+@keyframes lanzarFoto3 {
+    0% {
+        transform: translateY(100%) rotate(10deg);
+    }
+    50% {
+        transform: translateY(-50%) rotate(5deg);
+    }
+    100% {
+        transform: translateY(-20%) rotate(5deg);
+    }
+}
+
+#foto1 {
+    width: 400px;
+    animation: lanzarFoto1 2s ease-in-out forwards;
+}
+
+#foto2 {
+    width: 400px;
+    animation: lanzarFoto2 2s ease-in-out forwards;
+}
+
+#foto3 {
+    width: 400px;
+    animation: lanzarFoto3 2s ease-in-out forwards;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        font-size: 10px;
+    }
+
+    .fotos-container{
+        margin-top: -20px;
+    }
+
+    #foto1,#foto2,#foto3{
+        width: 200px;
+    }
+
+    .fotos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lastDiv{
+        font-size: 20px;
+        margin-top: -100px;
+    }
+}

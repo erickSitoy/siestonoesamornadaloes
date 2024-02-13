@@ -1,0 +1,54 @@
+@font-face {
+    font-family: fuente1;
+    src: url('archives.css/LilitaOne-Regular.ttf');
+}
+
+body{
+    background-image: url('../mutimedia/background.jpg');
+    background-repeat: no-repeat;
+    font-family: fuente1, sans-serif;
+}
+
+.boton{
+    font-family: fuente1, sans-serif;
+    margin-top: 80px;
+    border:3px solid black;
+    background-color: #ad5ceb;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 15px;
+    font-size: 40px;
+    width: 400px;
+    height: 100px;
+}
+
+.boton:hover{
+    background-color:#9340ea;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        margin-top: 120px;
+        font-size: 10px;
+    }
+
+    .texto{
+        width: 150px;
+        height: auto;
+        text-align: center;
+    }
+
+    .boton{
+        width: 300px;
+    }
+
+    .cartita{
+        width: 300px;
+        height: 760px;
+        margin-left: 13px;
+    }
+
+    .flores{
+        width: 200px;
+        margin-right: 130px;
+    }
+}
